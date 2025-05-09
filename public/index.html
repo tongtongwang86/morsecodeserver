@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Morsecode Server</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    button, input { font-size: 1.2rem; margin: 5px; }
+    .box { border: 1px solid #ccc; padding: 10px; min-height: 50px; margin-top: 10px; font-size: 1.5rem; white-space: pre-wrap; }
+    .label { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Morsecode Server UI</h1>
+
+  <label for="nameInput">Enter your name: </label>
+  <input id="nameInput" type="text" placeholder="e.g. sigma" />
+  <button onclick="registerName()">✔️ Set Name</button>
+
+  <br><br>
+  <button onclick="sendDit()">· Dit</button>
+  <button onclick="sendDah()">– Dah</button>
+  <button onclick="sendSpace()">␣ Space</button>
+  <button onclick="clearMessages()">🧹 Clear</button>
+
+  <div class="label">📤 Sent</div>
+  <div id="sentBox" class="box"></div>
+
+  <div class="label">📥 Received</div>
+  <div id="receivedContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
