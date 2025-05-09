@@ -32,6 +32,6 @@ wss.on('connection', function connection(ws) {
   });
 });
 
-server.listen(3000, '0.0.0.0', () => {
-  console.log('Server started on http://0.0.0.0:3000');
+server.listen(5313, '0.0.0.0', () => {
+  console.log('Server started on http://0.0.0.0:5313');
 });
