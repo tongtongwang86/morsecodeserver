@@ -1,5 +1,5 @@
 console.log('WebSocket connecting to:', location.host);
-const ws = new WebSocket(`ws://${location.host}`);
+const ws = new WebSocket(`wss://${location.host}`);
 
 let clientName = null;
 const users = {}; // userId -> { name, boxElement }
